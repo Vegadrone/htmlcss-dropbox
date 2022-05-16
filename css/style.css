@@ -22,6 +22,10 @@
     display: flex;
 }
 
+.position{
+    position: relative;
+}
+
 ul {
     list-style: none;
 }
@@ -35,15 +39,52 @@ a {
     background-color: aquamarine;
 }
 
+.span-block{
+    display: block;
+}
 
+/* HEADER */
 .head-container {
     height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(212, 97, 216);
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
+
+/* MAIN */
+
+
+/* HERO */
+.hero-container {
+    padding-top:70px;
+    background-color: #b4d0e7;
+    
+}
+
+.hero-content {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top:120px;
+    left: 0px;
+}
+
+h1{
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.text-img{
+    padding-top: 50px;
+    /* per spazire txt e img da h1 */
+}
+
+.hero-img img{
+    width: 100%;    
+}
