@@ -8,6 +8,10 @@
 
 /* COMMONS */
 
+.border{
+    border: solid 2px red;
+}
+
 @font-face {
     font-family: 'Open Sans';
     font-style: italic;
@@ -24,6 +28,11 @@
 
 .position{
     position: relative;
+}
+
+.common-width{
+    width: 60%;
+    margin: 0 auto;
 }
 
 ul {
@@ -63,14 +72,12 @@ a {
 /* HERO */
 .hero-container {
     padding-top:70px;
-    background-color: #b4d0e7;
-    
+    background-color: #b4d0e7;    
 }
 
 .hero-content {
     width: 70%;
     margin: 0 auto;
-    position: relative;
     top:120px;
     left: 0px;
 }
@@ -88,3 +95,28 @@ h1{
 .hero-img img{
     width: 100%;    
 }
+
+/* PLANS */
+
+.plans{
+    margin-top: 200px;
+}
+
+.pl-card{
+    width: calc(100% - 20px);
+    padding: 20px;
+    margin:10px
+}
+
+.plans-bot-text{
+    width: 70%;
+}
+
+.plans-bot-btn{
+    width: 30%;
+}
+
+/* PARTNERS */
+
+
+
