@@ -135,5 +135,24 @@ h1{
     left:50px;
 }
 
+/* OPERATIONS */
+
+.operations{
+    margin-top:100px;
+}
+
+.op-cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.op-cards img{
+    width: 100%;
+}
+
+.op-s-card{ 
+    width:30%;
+}
 
 
