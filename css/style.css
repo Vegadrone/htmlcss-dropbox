@@ -155,4 +155,50 @@ h1{
     width:30%;
 }
 
+/* INFO-BUSINESS */
 
+.info-business{
+    justify-content: flex-start;
+}
+
+.info-b-content{
+    padding:100px 100px 100px 0px;
+
+}
+
+/* CORPORATIONS */
+
+.corporations {
+    background-color: #b4d0e7;
+}
+
+.corp-box img{
+    width: 100px;
+    filter: invert(100%) sepia(97%) saturate(10%) hue-rotate(215deg) brightness(101%) contrast(100%);
+}
+
+.corp-box{
+    width: calc(100% / 3);
+}
+
+.cx{
+    padding: 40px;
+}
+
+.cx img{
+    width: 200px;
+    filter: invert(0%) sepia(0%) saturate(7494%) hue-rotate(136deg) brightness(108%) contrast(95%);
+}
+
+.corp-bottom{
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+
+/* FAQ */
+
+.faq{
+    margin-top: 100px;
+}
