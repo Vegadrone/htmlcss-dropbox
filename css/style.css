@@ -9,30 +9,58 @@
 
 /* COMMONS */
 
-.border{
+.border {
     border: solid 1px gray;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-.position{
+.position {
     position: relative;
 }
 
-.common-width{
+.common-width {
     width: 60%;
     margin: 0 auto;
 }
 
-.span-block{
+.botbrdr {
+    border-bottom: solid 1px gray;
+}
+
+.span-block {
     display: block;
 }
 
 .btn {
     background-color: #0061ff;
     color: #fff;
+}
+
+.gray-txt {
+    color: gray;
+}
+
+.padding10px {
+    padding: 10px 0px;
+}
+
+.margin10px {
+    margin: 10px 0px;
+}
+
+.margin20px {
+    margin: 20px 0px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -138,13 +166,33 @@ h1{
     margin-top: 200px;
 }
 
-.plans ul {
-    list-style: none;
+.radio-check{
+    padding: 50px 0px;
 }
 
-.plans a {
-    text-decoration: none;
-    background-color: aquamarine;
+.radio{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right:5px;
+    vertical-align: middle;
+}
+
+.checked{
+    border: #0061ff solid 5px;
+}
+
+.unchecked{
+    border: gray solid 2px;
+}
+
+.billing {
+    margin-right: 50px; 
+    line-height: 20px;
+}
+
+.plans ul {
+    list-style: none;
 }
 
 .plan-cards{
@@ -152,16 +200,34 @@ h1{
 }
 
 .pl-card{
-    width: calc(100% / 3 - 30px);
-    padding: 20px;   
+    width: calc(100% / 3 - 30px);  
+}
+
+.contact-us{
+    padding-bottom: 46px;
+    /* altrimenti non si allineano più i bottoni */
+}
+
+.inner-card{
+    padding: 20px;
+    flex-direction: column;
+}
+
+.card-btn{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 50px 0px;
+}
+
+.inner-card hr{
+    width: 60px;
+    margin: 50px 0px;
+
 }
 
 .plans-bottom {
     margin-top: 50px
-}
-
-.botbrdr{
-    border-bottom: solid 1px gray;
 }
 
 .plans-bot-text{
@@ -172,24 +238,45 @@ h1{
     width: 30%;
 }
 
-.user-icon::before{
+.user-icon::before {
     font-family: 'Font Awesome 5 Free';
     content: '\f007';
-    
-    
+    margin-right: 10px;   
+}
+
+.group-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0c0';
+    margin-right: 10px;
+     
+}
+
+.company-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f1ad';
+    margin-right: 10px;
 }
 
 .folder-icon::before {
     font-family: 'Font Awesome 5 Free';
-    content: '\f007';
+    content: '\f07b';
     padding-bottom: 20px;
+    margin-right: 10px;
 }
 
 .share-icon::before {
     font-family: 'Font Awesome 5 Free';
-    content: '\f007';
+    content: '\f064';
     padding-bottom: 20px;
+    margin-right: 10px;
 }
+
+.check-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00c';
+    margin-right: 10px;
+}
+
 
 /* PARTNERS */
 
@@ -207,6 +294,14 @@ h1{
     left:50px;
 }
 
+.partners-btn{
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+    top:50px;
+    left:0;
+}
+
 /* OPERATIONS */
 
 .operations{
@@ -219,23 +314,28 @@ h1{
     margin-top: 40px;
 }
 
-.op-cards img{
+.op-cards img {
     width: 100%;
 }
 
-.op-s-card{ 
+.op-s-card { 
     width:30%;
 }
 
 /* INFO-BUSINESS */
 
-.info-business{
+.info-business {
     justify-content: flex-start;
 }
 
-.info-b-content{
+.info-b-content {
     padding:100px 100px 100px 0px;
 
+}
+
+.info-b-content h2 {
+    margin: 100px 0px;
+    font-size: 60px;
 }
 
 /* CORPORATIONS */
@@ -244,33 +344,50 @@ h1{
     background-color: #b4d0e7;
 }
 
-.corporations a {
-    text-decoration: none;
-    background-color: aquamarine;   
-}
-
-.corp-box img{
+.corp-box img {
     width: 100px;
     filter: invert(100%) sepia(97%) saturate(10%) hue-rotate(215deg) brightness(101%) contrast(100%);
 }
 
-.corp-box{
+.corp-box {
     width: calc(100% / 3);
 }
 
-.cx{
+.cx {
     padding: 40px;
 }
 
-.cx img{
+.cx img {
     width: 200px;
     filter: invert(0%) sepia(0%) saturate(7494%) hue-rotate(136deg) brightness(108%) contrast(95%);
 }
 
-.corp-bottom{
+.corp-bottom {
     justify-content: space-between;
     align-items: center;
     padding: 100px 0px;
+}
+
+.corp-bottom h2{
+    font-size: 45px ;
+}
+
+.contain-txt{
+    width: 60%;
+
+}
+
+.contain-btn{
+    width: 40%;
+    margin-left: 150px;
+}
+
+.corp-btn {
+    background-color: #ececec;
+    text-decoration: none;
+    color: #000;
+    border: #000 solid 1px;
+    padding: 20px;
 }
 
 
