@@ -34,6 +34,10 @@
     display: block;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .btn {
     background-color: #0061ff;
     color: #fff;
@@ -97,18 +101,39 @@
     margin:0px 10px
 }
 
-.menu li{
-    display: inline-block;
-}
-
 .menu ul {
     list-style: none;
+}
+
+.dropdown-element{
+    display: block;
 }
 
 .nav-element {
     text-decoration: none;
     padding: 20px;
     color: #000;   
+}
+
+.nav-element:hover{
+    background-color: rgba(218, 218, 218);
+}
+
+.dropdown:hover{
+    background-color: rgba(218, 218, 218);
+}
+
+.dropdown-content{
+    display: none;
+    width: 200px;
+    background-color: rgb(218,218,218);
+    position: absolute;
+    left:0px;
+    top:46px;  
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .header-btn{
@@ -211,9 +236,17 @@ h1{
     justify-content: space-between;
 }
 
+/* .plan-cards:hover{
+    filter: blur(3px);
+} Effetto che mi piacerebbe provare a fare */
+
 .pl-card{
     width: calc(100% / 3 - 30px);  
 }
+
+/* .pl-card:hover{
+    transform: scale(1.1);
+} Effetto che mi piacerebbe provare a fare */
 
 .contact-us{
     padding-bottom: 46px;
@@ -512,6 +545,35 @@ h1{
 
 .faq-box:hover{
     display:block
+}
+
+.arrow-down-icon{
+    position: relative;
+    bottom: 40px;
+    left: 1020px;
+    display: none;
+}
+
+.arrow-up-icon{
+    position: relative;
+    bottom:40px;
+    left: 1020px;
+}
+
+.faq-box:hover{
+    cursor: pointer;
+}
+
+.faq-box:hover .answer{
+    display: block;
+}
+
+.faq-box:hover .arrow-down-icon{
+    display: block;
+}
+
+.faq-box:hover .arrow-up-icon{
+    display: none;
 }
 
 

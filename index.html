@@ -22,18 +22,25 @@
         <nav class="head-container flex-container"> 
             <div class="menu nav-dx">         
                 <ul>
-                    <li class="logo position"><a href="#"><img src="./img/logo-small.png" alt="logo.img"></a></li>
-                    <li><a class="nav-element" href="#">Perché Dropbox</a></li>
-                    <li><a class="nav-element" href="#">Funzioni</a></li>
-                    <li><a class="nav-element" href="#">Piani e Prezzi</a></li>
+                    <li class="logo position inline-block"><a href="#"><img src="./img/logo-small.png" alt="logo.img"></a></li>
+                    <li class="inline-block"><a class="nav-element" href="#">Perché Dropbox</a></li>
+                    <li class="position inline-block">
+                        <a class="nav-element dropdown" href="#">Funzioni</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-element">Lorem</li>
+                            <li class="dropdown-element">Lorem</li>
+                            <li class="dropdown-element">Lorem</li>
+                        </ul>
+                    </li>
+                    <li class="inline-block"><a class="nav-element" href="#">Piani e Prezzi</a></li>
                 </ul>    
             </div>
             <div class="menu nav-sx">
                 <ul>
-                    <li><a class="nav-element" href="#">Supporto</a></li>
-                    <li><a class="nav-element" href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a class="nav-element" href="#">Accedi</a></li>
-                    <li><a class="btn header-btn" href="#">Inizia</a></li>
+                    <li class="inline-block"><a class="nav-element" href="#">Supporto</a></li>
+                    <li class="inline-block"><a class="nav-element" href="#">Contatta l'ufficio vendite</a></li>
+                    <li class="inline-block"><a class="nav-element" href="#">Accedi</a></li>
+                    <li class="inline-block"><a class="btn header-btn" href="#">Inizia</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,11 +83,11 @@
         <div class="plan-cards flex-container">
 
 <!-- FIRST CARD -->
-            <div class="pl-card border">
+            <div class="pl-card hover border">
                 <span class="span-block padding10px txt-center user-icon botbrdr">Singolo</span>
                 <div class="inner-card flex-container">
                     <h3>Professional</h3>
-                    <span class="span-block  margin10px price">&euro; 12.00</span>
+                    <span class="span-block  margin10px bold">&euro; 12.00</span>
                     <span class="span-block gray-txt margin10px">/mese</span>
                     <ul>
                         <li class="user-icon margin10px">1 utente</li>
@@ -99,11 +106,11 @@
             </div>
 
 <!-- SECOND CARD -->
-            <div class="pl-card border">
+            <div class="pl-card hover border">
                 <span class="span-block padding10px txt-center group-icon botbrdr">Team</span>
                 <div class="inner-card flex-container">
                     <h3>Advanced</h3>
-                    <span class="span-block margin10px price">&euro; 18.00</span>
+                    <span class="span-block margin10px bold">&euro; 18.00</span>
                     <span class="span-block gray-txt margin10px">/utente/mese</span>
                     <ul>
                         <li class="user-icon margin10px">3 o più utenti</li>
@@ -124,7 +131,7 @@
             </div>
 
 <!-- THIRD CARD -->
-            <div class="pl-card border">
+            <div class="pl-card hover border">
                 <span class="span-block company-icon padding10px txt-center botbrdr">Azienda</span>
                 <div class="inner-card flex-container">
                     <h3>Enterprise</h3>
